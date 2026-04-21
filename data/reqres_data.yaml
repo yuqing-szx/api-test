@@ -1,0 +1,18 @@
+-
+  method: "POST"
+  url: "https://reqres.in/api/users"
+  data:
+    name: "morpheus"
+    job: "leader"
+  expected:
+    status_code: 401
+    name: "morpheus"
+-
+  method: "POST"
+  url: "https://reqres.in/api/users"
+  data:
+    name: ""
+    job: ""
+  expected:
+    status_code: 401
+    name: null
